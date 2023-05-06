@@ -1,0 +1,19 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": { "major": 3, "minor": 25, "patch": 2 },
+  "configurePresets": [
+    {
+      "name": "x64-windows",
+      "generator": "Ninja",
+      "toolchainFile": "vcpkg/scripts/buildsystems/vcpkg.cmake",
+      "binaryDir": "out/x64-windows",
+      "cacheVariables": {
+        "VCPKG_TARGET_TRIPLET": "x64-windows",
+        "VCPKG_INSTALL_OPTIONS": "--no-print-usage"
+      },
+      "environment": {
+        "CXXFLAGS": "/permissive-"
+      }
+    }
+  ]
+}
